@@ -1,0 +1,18 @@
+# Melalui PUTTY :
+
+- #!/bin/bash
+- sudo su
+- sudo apt update
+- sudo apt install apache2
+- systemctl status apache2
+- cd /var/www/html
+- sudo nano index.html
+
+# Melalui USER DATA :
+
+- #!/bin/bash
+- sudo su
+- sudo apt update
+- cd /var/www/html
+- echo "<html><h1>MASUKAN BEBAS - $(Hostname -f)</h1></html>" > index.html
+- service httpd start
